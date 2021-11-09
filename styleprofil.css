@@ -1,0 +1,107 @@
+* {
+  padding: 5px;
+  margin: 5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+tr {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: cornsilk;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+/*header*/
+.conteiner_atas {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+.img_saya {
+  width: 250px;
+  height: 250px;
+  margin-left: 50px;
+  border-radius: 50px;
+}
+.profil {
+padding-left: 30px;
+}
+.a {
+  padding-bottom: 25px;
+}
+.cp {
+  margin: 0;
+  padding:0;
+  color: black;
+}
+.b :hover {
+  color: blue;
+}
+.categories {
+  margin-left: auto;
+}
+.ul_cat :hover {
+  color: blue;
+}
+.child_categories {
+  text-align: right;
+}
+
+p {
+  word-spacing: 7px;
+}
+/*footer*/
+.conteiner_bawah{
+  display: flex;
+  justify-content: space-around;
+}
+.video {
+  width: 300px;
+  height: 300px;
+}
+.sertifikat {
+  border: 1px solid black;
+}
+.img_sertifikat {
+  width: 100px;
+  height: 100px;
+}
+#sosial_media {
+  font-weight: bold;
+  margin: 0; 
+  padding: 0;
+}
+.conteiner_sosmed {
+  width: 300px;
+  height: 250px;
+}
+.img_sosmed {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.img_sosmed :hover {
+  color: blue;
+}
+.sosmed {
+  padding: 0 ;
+  margin: 0;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+}
+tbody {
+  margin: 0; 
+  padding: 0;
+}

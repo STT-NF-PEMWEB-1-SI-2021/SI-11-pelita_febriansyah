@@ -1,0 +1,95 @@
+.box1 {
+    width: 13.5%;
+    height: 90px;
+    background-color: yellow;
+    border-radius: 0px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    top: 45px;
+    left: 29px;
+}
+
+.box2 {
+    width: 1050px;
+    height: 90px;
+    border-radius: 0px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-style: solid;
+    border-color: black;
+    background-color: orangered;
+    position: absolute;
+    top: 55px;
+    left: 20%;
+}
+
+.box3 {
+    width: 180px;
+    height: 600px;
+    background-color: green;
+    border-radius: 0px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    top: 70px;
+    left: 29px;
+}
+
+.box4 {
+    width: 810px;
+    height: 600px;
+    background-color:rgb(214, 214, 214);
+    border-radius: 0px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px; 
+    border-style: solid;
+    border-color: black;
+    position: absolute;
+    top: 172px;
+    left: 270px;
+}
+
+.box5 {
+    width: 180px;
+    height: 600px;
+    background-color: rgb(107, 196, 255);
+    border-radius: 0px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-style: solid;
+    border-color: black;
+    position: absolute;
+    top: 172px;
+    right: 25px;
+}
+
+.box6 {
+    width: 96.5%;
+    height: 80px;
+    background-color: rgb(26, 10, 252);
+    border-radius: 0px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    top: 102px;
+    left: 29px;
+ }

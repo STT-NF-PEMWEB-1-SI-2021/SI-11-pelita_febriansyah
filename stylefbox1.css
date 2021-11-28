@@ -1,0 +1,21 @@
+#atas {
+    display: flex;
+    height: 50%;
+    flex-direction: row;
+}
+#bawah {
+    display: flex;
+    height: 50%;
+    flex-direction: row;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+img{
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+}
+

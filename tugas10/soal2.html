@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function rupiah(){
+            const rp=14650;
+            let dollar=document.getElementById("bil1").value;
+            console.log("US dollar : "+dollar);
+            let nilaikurs=rp*dollar;
+            console.log("Nilai kurs Dollar : "+nilaikurs);
+            let area_hasil=document.getElementById("hasil");
+            area_hasil.innerHTML="Rp "+nilaikurs;
+        }
+        </script>
+    </head>
+    <body>
+        <h2>Menghitung Kurs Rupiah</h2>
+        nominal Dollar :
+        <input type="number" value="" size="10" id="bil1"/>
+        <br/>
+        <button onclick="rupiah()">Rupiah</button>
+        <br/>Hasil : <span id="hasil"></span>
+    </body>
+</html>

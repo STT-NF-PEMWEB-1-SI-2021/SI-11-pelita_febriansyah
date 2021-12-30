@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gambar makanan</title>
+    <script>
+        function gambar(){
+            let pict = document.getElementById("gambar").value;
+            alert("Ini gambar "+ pict);
+            if (pict == "bakso.JPG"){
+                document.getElementById("muncul_gambar").src="bakso.JPG";
+            }
+            else if (pict == "cakwe.JPG"){
+                document.getElementById("muncul_gambar").src="cakwe.JPG";
+            }
+            else if (pict == "donut.JFIF"){
+                document.getElementById("muncul_gambar").src="donut.JFIF";
+            }
+            else if (pict == "seblak.JPG"){
+                document.getElementById("muncul_gambar").src="seblak.JPG";
+            }
+            else if (pict == "takoyaki.JFIF"){
+                document.getElementById("muncul_gambar").src="takoyaki.JFIF";
+            }
+            else if (pict == "tutut.JPG"){
+                document.getElementById("muncul_gambar").src="tutut.JPG";
+            }
+            else if (pict == "sosis.JPG"){
+                document.getElementById("muncul_gambar").src="sosis.JPG";
+            }
+        }
+    </script>
+    <style>
+        div {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            padding: 20px;
+            width: 50%;
+            background-color: beige;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <select id="gambar" name="gambar" onchange="gambar()">
+            <option value="bakso.JPG">bakso</option>
+            <option value="cakwe.JPG">cakwe</option>
+            <option value="donut.JFIF">donut</option>
+            <option value="seblak.JPG">seblak</option>
+            <option value="takoyaki.JFIF">takoyaki</option>
+            <option value="tutut.JPG">tutut</option>
+            <option value="sosis.JPG">sosis</option>
+        </select>
+        <br/>
+        <img id="muncul_gambar" src="bakso.jpg" alt="munculgambar" style="width: 50%;">
+    </div>
+</body>
+</html>

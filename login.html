@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script src="otentikasi.js"></script>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 20%;
+            border: 3px solid #73AD21;
+            background-color: greenyellow;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="kotak">
+        <input type="text" name="username" value=""/>
+        <br>
+        <input type="password" name="password" value=""/>
+        <br>
+        <br>
+        <input type="button" value="Login" name="login" onclick="login_akun()"/>
+    </form>
+</body>
+</html>

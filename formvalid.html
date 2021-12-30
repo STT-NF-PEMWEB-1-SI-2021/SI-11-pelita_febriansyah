@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 5% 10%;
+        }
+        p {
+            color: red;
+            margin-left: 10px;
+        }
+        .isi {
+            display: flex;
+            flex-direction: row;
+        }
+        input {
+            width: 300px;
+            height: 50px;
+        }
+        button {
+            width: 300px;
+        }
+    </style>
+    <script>
+        function pesan(){
+            // nama pelanggan
+            let nm = document.getElementById("pesan").nama_pelanggan.value;
+            if (nm == ""){
+                document.getElementById("nama_error").innerHTML = "error! data tidak valid";
+            }else{
+                document.getElementById("nama_error").innerHTML = "";
+            }
+
+            // alamat email
+            let em = document.getElementById("pesan").email_pelanggan.value;
+            if (em == ""){
+                document.getElementById("email_error").innerHTML = "error! data tidak valid";
+            }else{
+                document.getElementById("email_error").innerHTML = "";
+            }
+
+            // jam berangkat
+            let jm = document.getElementById("pesan").time_pelanggan.value;
+            if (jm == ""){
+                document.getElementById("time_error").innerHTML = "error! data tidak valid";
+            }else{
+                document.getElementById("time_error").innerHTML = "";
+            }
+
+            // tujuan keberangkatan
+            let tuj = document.getElementById("pesan").tempat_pelanggan.value;
+            if (tuj == ""){
+                document.getElementById("tempat_error").innerHTML = "error! data tidak valid";
+            }else{
+                document.getElementById("tempat_error").innerHTML = "";
+            }
+
+            // jumlah tiket
+            let jum = document.getElementById("pesan").jumlah_pelanggan.value;
+            if (jum == ""){
+                document.getElementById("jumlah_error").innerHTML = "error! data tidak valid";
+            }else{
+                document.getElementById("jumlah_error").innerHTML = "";
+            }
+            if (nm !="" && em !="" && jm !="" && tuj !="" && jum !=""){
+                document.getElementById("hasil1").innerHTML = "Nama Pelanggan :"+nm;
+                document.getElementById("hasil2").innerHTML = "Email :"+em;
+                document.getElementById("hasil3").innerHTML = "Jam Keberangkatan :"+jm;
+                document.getElementById("hasil4").innerHTML = "Tujuan Keberangkatan :"+tuj;
+                document.getElementById("hasil5").innerHTML = "Jumlah Tiket :"+jum;
+            }
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <form id="pesan" onsubmit="return pesan()">
+        Nama Pelanggan :
+        <div class="isi">
+            <input type="text" name="nama_pelanggan" value="" maxlength="30">
+            <p id="nama_error"></p>
+        </div>
+        Email :
+        <div class="isi">
+            <input type="email" name="email_pelanggan" value="">
+            <p id="email_error"></p>
+        </div>
+        Jam Keberangkatan :
+        <div class="isi">
+            <input type="time" name="time_pelanggan" value="">
+            <p id="time_error"></p>
+        </div>
+        Tujuan Keberangkatan :
+        <div class="isi">
+            <input type="text" name="tempat_pelanggan" value="">
+            <p id="tempat_error"></p>
+        </div>
+        Jumlah Tiket :
+        <div class="isi">
+            <input type="number" name="jumlah_pelanggan" min="1" max="10" value="">
+            <p id="jumlah_error"></p>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+        <span id="hasil1"></span>
+        <span id="hasil2"></span>
+        <span id="hasil3"></span>
+        <span id="hasil4"></span>
+        <span id="hasil5"></span>
+    </form>
+</body>
+</html>
